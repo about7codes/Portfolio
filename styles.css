@@ -8,6 +8,11 @@ html {
   scroll-behavior: smooth;
 }
 
+*::selection{
+  background: #581b98 ;
+  color: #fff;
+}
+
 body {
   background: #fdfdfd;
   margin: 0;
