@@ -1,3 +1,18 @@
+
+// Show/Hide Nav on scroll 
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav").style.top = "0";
+  } else {
+    document.getElementById("nav").style.top = "-165px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
+// Add class to nav on scroll 
 window.addEventListener("scroll", function(e) {
   var nav = document.getElementById("nav");
   if (
@@ -11,3 +26,4 @@ window.addEventListener("scroll", function(e) {
     nav.classList.remove("nav-colored");
   }
 });
+

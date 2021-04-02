@@ -1,3 +1,4 @@
+// Loading script part 
 
 const loadX = document.getElementById('loadx');
 
@@ -8,3 +9,5 @@ window.addEventListener('load', (event) => {
     loadX.style.opacity = '0';
     loadX.style.visibility = 'hidden';
 });
+
+
