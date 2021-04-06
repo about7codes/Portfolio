@@ -405,6 +405,13 @@ section .overlay-resume {
 .wrapper {
   font-family: "Lato", sans-serif;
   position: relative;
+  &.alt {
+    img {
+      margin: 0 auto;
+      width: auto;
+      max-height: 200px;
+    }
+  }
 }
 
 .wrapper img {

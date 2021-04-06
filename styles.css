@@ -532,6 +532,12 @@ section .overlay-resume {
   position: relative;
 }
 
+.wrapper.alt img {
+  margin: 0 auto;
+  width: auto;
+  max-height: 200px;
+}
+
 .wrapper img {
   border-radius: 7px;
   opacity: 1;
