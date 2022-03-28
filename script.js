@@ -27,3 +27,12 @@ window.addEventListener("scroll", function(e) {
   }
 });
 
+// Hide mobile nav on link click
+let getList = document.querySelectorAll(".navbar li a");
+// convert NodeList to Array
+let items = [...getList];
+let tog = document.querySelector("#toggle");
+
+items.map((item) => {
+  item.addEventListener('click', () => tog.checked = false);       
+});
