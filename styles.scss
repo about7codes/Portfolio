@@ -358,12 +358,35 @@ a {
 .exp-bottom .exp-tech img {
   width: 75px;
   height: auto;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
   filter: grayscale(100%);
   transition: ease-in-out 0.3s;
 }
 .exp-bottom .exp-tech img:hover {
   filter: none;
+}
+
+.exp-bottom .exp-tech li{
+  position: relative;
+  padding: 0 5px;
+}
+
+.exp-bottom .exp-tech li .tech-name{
+  white-space: nowrap;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font: 14px sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000;
+  transition: ease-in-out 0.3s;
+  opacity: 0;
+}
+
+.exp-bottom .exp-tech li:hover .tech-name{
+  opacity: 1;
 }
 
 /* Resume Section Styles below  */
